@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f5f6fb">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="second.css"/>
+</head>
+<body>
+    <header>
+        <div id="logo"><img src="assets/dog.webp" alt="image of a dog" id="logoImg"></div>
+        <nav aria-label="Main navigation">
+            <ul id="navContainer">
+                <li class="navList">
+                    <a href="#home">Home</a>
+                </li>
+                <li class="navList">
+                    <a href="#about">About</a>
+                </li>
+                <li class="navList">
+                    <a href="#contact">Contacts</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home" aria-labelledby="about">
+            <div class="bioInfo rectangle">
+                <p class="eyebrow">Welcome to my portfolio</p>
+                <h1 id="about">A little about me</h1>
+                <p>Explore my skills, learn a little about what I do, and get in touch to stay up to date.</p>
+            </div>
+            <div class="bioInfo circle" aria-hidden="true"></div>
+        </section>
+        <section id="sectionTwo" aria-labelledby="skills-heading">
+            <h2 id="skills-heading">Skills I’m learning</h2>
+            <div class="skillsCard">
+                <p class="skillType">HTML</p>
+            </div>
+            <div class="skillsCard">
+                <p class="skillType">CSS</p>
+            </div>
+            <div class="skillsCard">
+                <p class="skillType">JAVASCRIPT</p>
+            </div>
+        </section>
+        <section id="contact" aria-labelledby="contact-heading">
+            <form>
+                <label id="contact-heading" for="subscribe">Stay up to date</label>
+                <input type="email" placeholder="you@example.com" id="subscribe" name="email"/>
+                <button type="submit">
+                    Subscribe
+                </button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
